@@ -1,0 +1,25 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.style.css",
+    "prod": "sass ./sass/main.scss:.style.css",
+    "prefix":"postcss ./style.css --use autoprefixer -d ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightomega/AlexandreSouville_3_25112019.git"
+  },
+  "author": "Souville Alexandre",
+  "license": "ISC",
+  "browserlist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/lightomega/AlexandreSouville_3_25112019/issues"
+  },
+  "homepage": "https://github.com/lightomega/AlexandreSouville_3_25112019#readme",
+  "dependencies": {
+    "sass": "^1.32.5"
+  }
+}
