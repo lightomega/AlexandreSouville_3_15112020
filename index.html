@@ -4,15 +4,15 @@
         <meta charset="utf-8">
         <title>Titre</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header>
-            <img src="images/logo/ohmyfood.png" alt="logo">
+            <img src="images/logo/ohmyfood@2x.svg" alt="logo">
         </header>
 
         <section id="explorer">
-            <p>Paris, Belleville</p>
+            <p class="explorer__lieu">Paris, Belleville</p>
             <div class="explorer-bloc">
                 <h3 class="explorer-bloc__titre">Réservez le menu qui vous convient</h3>
                 <p class="explorer-bloc__txt">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
@@ -23,9 +23,9 @@
         <section id="infos">
             <div class="infos-bloc">
                 <h3 class="infos-bloc__titre">Fonctionnement</h3>
-                <div class="infos-bloc__choisir">Choisissez un restaurant</div>
-                <div class="infos-bloc__composer">Composez votre menu</div>
-                <div class="infos-bloc__deguster">Dégustez au restaurant</div>
+                <div class="element-base infos-bloc__choisir">Choisissez un restaurant</div>
+                <div class="element-base infos-bloc__composer">Composez votre menu</div>
+                <div class="element-base infos-bloc__deguster">Dégustez au restaurant</div>
             </div>
             
         </section>
@@ -34,6 +34,11 @@
             <div class="restaurants-bloc">
                 <h3 class="restaurants-bloc__titre">Restaurants</h3>
                 <div class="restaurant-aperçu">
+                    <picture>
+                        <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-1.jpg">
+                        
+                        <img src="images/restaurants/restaurant-1.jpg" alt="La-palette-du-gout">
+                    </picture>
                     <h4 class="restaurant-aperçu__titre">La palette du goût</h4>
                     <p class="restaurant-aperçu__ville">Ménilmontant</p>
                 </div>
@@ -53,11 +58,11 @@
 
         </section>
         <footer>
-            (logo)
-            Proposer un restaurant
-            Devenir partenaire
-            Mentions légales
-            Contact
+            <img src="images/logo/ohmyfood@2x.svg" alt="logo">
+            <p>Proposer un restaurant</p>
+            <p>Devenir partenaire</p>
+            <p>Mentions légales</p>
+            <p>Contact</p>
         </footer>
     </body>
 </html>

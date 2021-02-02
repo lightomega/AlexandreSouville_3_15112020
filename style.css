@@ -1,0 +1,97 @@
+html{
+    width: 100%;
+}
+header{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+.explorer-bloc{
+    height: auto;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    
+}
+.explorer-bloc__titre{
+    text-align: center;
+}
+.explorer-bloc__txt{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.btn{
+    width: 180px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: #FF79DA;
+    color: white;
+    border: none;
+}
+#explorer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1F1F1;
+}
+.infos-bloc{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.element-base{
+    width: 90%;
+    height: 70px;
+    background-color: #EEEEEE;
+    box-shadow: 3px 3px 40px #F9F9F9;
+    border-radius: 15px;
+}
+#restaurants{
+    background-color: #F9F9F9;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+.restaurants-bloc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.restaurant-aperçu{
+    width: 95%;
+    height: auto;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.restaurant-aperçu__titre{
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.restaurant-aperçu__ville{
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.restaurant-aperçu img{
+    width: 100%;
+}
+footer{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: #4F4F4F;
+    color: white;
+}
