@@ -51,6 +51,10 @@ header{
     background-color: #EEEEEE;
     box-shadow: 4px 4px 6px #EAEAEA;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 #restaurants{
     background-color: #F9F9F9;
