@@ -1,10 +1,19 @@
-html{
-    width: 100%;
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-size: 26px;
 }
 header{
-    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 3px;
     display: flex;
     justify-content: center;
+    -webkit-box-shadow: 0px -2px 6px 4px #A8A8A8; 
+box-shadow: 0px -2px 6px 4px #A8A8A8;
+position: relative;
 }
 .explorer-bloc{
     height: auto;
@@ -14,7 +23,11 @@ header{
     justify-content: center;
     align-items: center;
     padding: 50px;
+    padding-top: 20px;
     
+}
+.explorer__lieu{
+    font-weight: 500;
 }
 .explorer-bloc__titre{
     text-align: center;
@@ -23,20 +36,25 @@ header{
     text-align: center;
     margin-top: 0px;
     margin-bottom: 30px;
+    font-weight: 300;
 }
 .btn{
-    width: 180px;
-    height: 40px;
+    width: 190px;
+    height: 45px;
     border-radius: 25px;
-    background-color: #FF79DA;
+    background: #FF79DA;
+    background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%, #C59237 100%);
+    background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%, #C59237 100%);
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%, #C59237 100%);
     color: white;
     border: none;
+    font-weight: 500;
 }
 #explorer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F1F1F1;
+    background-color: #ecebeb;
 }
 .infos-bloc{
     height: 350px;
@@ -45,9 +63,13 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-.element-base{
+.infos-bloc__titre{
     width: 90%;
-    height: 70px;
+    text-align: left;
+}
+.element-base{
+    width: 85%;
+    height: 60px;
     background-color: #EEEEEE;
     box-shadow: 4px 4px 6px #EAEAEA;
     border-radius: 15px;
@@ -55,6 +77,8 @@ header{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 16px;
 }
 #restaurants{
     background-color: #F9F9F9;
@@ -68,8 +92,12 @@ header{
     align-items: center;
     padding-bottom: 40px;
 }
+.restaurants-bloc__titre{
+    width: 90%;
+    text-align: left;
+}
 .restaurant-aperçu{
-    width: 95%;
+    width: 90%;
     height: auto;
     background-color: white;
     margin-bottom: 20px;
