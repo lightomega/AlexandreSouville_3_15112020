@@ -2,15 +2,21 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
-h1{
+h1, h2, header a{
     font-family: 'Shrikhand', cursive;
     font-weight: lighter;
     margin: 0;
+}
+h2{
+    font-size: 30px;
 }
 h3{
     font-size: 26px;
 }
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 15px;
     padding-bottom: 5px;
     display: flex;
