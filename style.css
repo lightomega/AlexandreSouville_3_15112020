@@ -13,6 +13,12 @@ h2{
 h3{
     font-size: 26px;
 }
+a:link{
+    text-decoration: none;
+}
+a{
+    color: black;
+}
 header{
     display: flex;
     justify-content: center;
