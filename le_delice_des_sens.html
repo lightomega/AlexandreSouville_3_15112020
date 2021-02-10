@@ -15,65 +15,71 @@
             <a href="index.html">R</a>
             <h1>ohmyfood</h1>
         </header>
-        <div class="bloc-menu">
-            <h2 class="bloc-menu__titre">Le délice des sens</h2>
-            <div class="bloc-entrees">
-                <h3 class="bloc-entrees__titre">ENTREES</h3>
-                <div class="element-base">
-                    <h4>Tartare de thon</h4>
-                    <p>Assaisonné au yuzu</p>
-                    <p>25€</p>
+        <picture>
+            <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-4-menu-page.jpg">
+                        
+            <img class="background-image" src="images/restaurants/restaurant-4-menu-page.jpg" alt="La-palette-du-gout">
+        </picture>
+        <div class="restaurant-carte">
+            <h2 class="restaurant-carte__titre">Le délice des sens</h2>
+            <div class="bloc-menu">
+                <h3 class="bloc-menu__titre"><span class="bloc-menu__titre--underline">ENTR</span>EES</h3>
+                
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Tartare de thon</h4>
+                    <p class="bloc-menu__infos__detail">Assaisonné au yuzu</p>
+                    <p class="bloc-menu__infos__prix">25€</p>
                 </div>
-                <div class="element-base">
-                    <h4>Bouchée de homard croustillant</h4>
-                    <p>Et sa farandole de petits légumes</p>
-                    <p>35€</p>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Bouchée de homard croustillant</h4>
+                    <p p class="bloc-menu__infos__detail">Et sa farandole de petits légumes</p>
+                    <p class="bloc-menu__infos__prix">35€</p>
                 </div>
-                <div class="element-base">
-                    <h4>Velouté de cèpes</h4>
-                    <p>Aux truffes</p>
-                    <p>20€</p>
-                </div>
-            </div>
-            <div class="bloc-plats">
-                <h3>PLATS</h3>
-                <div class="element-base">
-                    <h4>Poulet rôti aux herbes de provence</h4>
-                    <p>Et sa crème de truffe</p>
-                    <p>40€</p>
-                </div>
-                <div class="element-base">
-                    <h4>Langouste rôtie</h4>
-                    <p>Et ses légumes de saison</p>
-                    <p>35€</p>
-                </div>
-                <div class="element-base">
-                    <h4>Côte de boeuf angus</h4>
-                    <p>Et sa purée de panais</p>
-                    <p>44€</p>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Velouté de cèpes</h4>
+                    <p p class="bloc-menu__infos__detail">Aux truffes</p>
+                    <p class="bloc-menu__infos__prix">20€</p>
                 </div>
             </div>
-            <div class="bloc-desserts">
-                <h3>DESSERTS</h3>
-                <div class="element-base">
-                    <h4>Farandole de desserts</h4>
-                    <p>Du chef</p>
-                    <p>18€</p>
+            <div class="bloc-menu">
+                <h3 class="bloc-menu__titre"><span class="bloc-menu__titre--underline">PLAT</span>S</h3>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Poulet rôti aux herbes de Provence </h4>
+                    <p class="bloc-menu__infos__detail">Et sa crème de truffe</p>
+                    <p class="bloc-menu__infos__prix">40€</p>
                 </div>
-                <div class="element-base">
-                    <h4>Crème brûlée</h4>
-                    <p>Revisitée</p>
-                    <p>22€</p>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Langouste rôtie</h4>
+                    <p class="bloc-menu__infos__detail">Et ses légumes de saison</p>
+                    <p class="bloc-menu__infos__prix">35€</p>
                 </div>
-                <div class="element-base">
-                    <h4>Tiramisu</h4>
-                    <p>A la noisette</p>
-                    <p>23€</p>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Côte de boeuf Angus</h4>
+                    <p class="bloc-menu__infos__detail">Et sa purée de panais</p>
+                    <p class="bloc-menu__infos__prix">44€</p>
                 </div>
             </div>
-            <button class="btn bloc-menu_btn">Commander</button>
+            <div class="bloc-menu">
+                <h3 class="bloc-menu__titre"><span class="bloc-menu__titre--underline">DESS</span>ERTS</h3>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Farandole de desserts</h4>
+                    <p class="bloc-menu__infos__detail">Du chef</p>
+                    <p class="bloc-menu__infos__prix">18€</p>
+                </div>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Crème brulée </h4>
+                    <p class="bloc-menu__infos__detail">Revisitée</p>
+                    <p class="bloc-menu__infos__prix">22€</p>
+                </div>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Tiramisu</h4>
+                    <p class="bloc-menu__infos__detail">À la noisette</p>
+                    <p class="bloc-menu__infos__prix">23€</p>
+                </div>
+            </div>
+            <button class="btn bloc-menu__btn">Commander</button>
         </div>
-        <footer>
+        <footer class="restaurant-carte__footer">
             <h1 class="footer__titre">ohmyfood</h1>
             <p>Proposer un restaurant</p>
             <p>Devenir partenaire</p>

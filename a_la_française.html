@@ -15,65 +15,70 @@
             <a href="index.html">R</a>
             <h1>ohmyfood</h1>
         </header>
-        <div class="bloc-menu">
-            <h2 class="bloc-menu__titre">A la française</h2>
-            <div class="bloc-entrees">
-                <h3 class="bloc-entrees__titre">ENTREES</h3>
-                <div class="element-base">
-                    <h4>Tartare de poulpe acidulé</h4>
-                    <p>aux zests d'orange</p>
-                    <p>25€</p>
+        <picture>
+            <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-3-menu-page.jpg">
+                        
+            <img class="background-image" src="images/restaurants/restaurant-3-menu-page.jpg" alt="La-palette-du-gout">
+        </picture>
+        <div class="restaurant-carte">
+            <h2 class="restaurant-carte__titre">A la Française</h2>
+            <div class="bloc-menu">
+                <h3 class="bloc-menu__titre"><span class="bloc-menu__titre--underline">ENTR</span>EES</h3>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Tartare de poulet acidulé</h4>
+                    <p class="bloc-menu__infos__detail">Aux zestes d'orange</p>
+                    <p class="bloc-menu__infos__prix">25€</p>
                 </div>
-                <div class="element-base">
-                    <h4>Velouté de légumes d'antan</h4>
-                    <p>carotte, panais, topinambour</p>
-                    <p>35€</p>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Velouté de légumes d'antan</h4>
+                    <p p class="bloc-menu__infos__detail">Carotte, maïs, topinambour</p>
+                    <p class="bloc-menu__infos__prix">35€</p>
                 </div>
-                <div class="element-base">
-                    <h4>Soupe à l'oignon</h4>
-                    <p>revisitée</p>
-                    <p>20€</p>
-                </div>
-            </div>
-            <div class="bloc-plats">
-                <h3>PLATS</h3>
-                <div class="element-base">
-                    <h4>Coquilles Saint-Jacques</h4>
-                    <p>Accompagnées d'une purée de panais</p>
-                    <p>40€</p>
-                </div>
-                <div class="element-base">
-                    <h4>Magret de canard</h4>
-                    <p>Et parmentier de pommes de terres</p>
-                    <p>35€</p>
-                </div>
-                <div class="element-base">
-                    <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                    <p>Sur son lit de gnocchis aux légumes</p>
-                    <p>44€</p>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Soupe à l'oignon</h4>
+                    <p p class="bloc-menu__infos__detail">Revisitée</p>
+                    <p class="bloc-menu__infos__prix">20€</p>
                 </div>
             </div>
-            <div class="bloc-desserts">
-                <h3>DESSERTS</h3>
-                <div class="element-base">
-                    <h4>Pétales de violettes glacés</h4>
-                    <p>Et purée de noisettes</p>
-                    <p>18€</p>
+            <div class="bloc-menu">
+                <h3 class="bloc-menu__titre"><span class="bloc-menu__titre--underline">PLAT</span>S</h3>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Coquilles Saint-Jacques</h4>
+                    <p class="bloc-menu__infos__detail">Accompagnées d'une purée de panais</p>
+                    <p class="bloc-menu__infos__prix">40€</p>
                 </div>
-                <div class="element-base">
-                    <h4>Fondant au chocolat</h4>
-                    <p>Revisité</p>
-                    <p>22€</p>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Magret de canard</h4>
+                    <p class="bloc-menu__infos__detail">Et parmentier de pommes de terre</p>
+                    <p class="bloc-menu__infos__prix">35€</p>
                 </div>
-                <div class="element-base">
-                    <h4>Millefeuille croustillant</h4>
-                    <p>Myrtilles et pâte d'amande</p>
-                    <p>23€</p>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Pigeonneau d’Ille-et-Vilaine</h4>
+                    <p class="bloc-menu__infos__detail">Sur son lit de gnocchis aux légumes</p>
+                    <p class="bloc-menu__infos__prix">44€</p>
                 </div>
             </div>
-            <button class="btn bloc-menu_btn">Commander</button>
+            <div class="bloc-menu">
+                <h3 class="bloc-menu__titre"><span class="bloc-menu__titre--underline">DESS</span>ERTS</h3>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Pétales de violettes glacés</h4>
+                    <p class="bloc-menu__infos__detail">Et purée de noisettes</p>
+                    <p class="bloc-menu__infos__prix">18€</p>
+                </div>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Fondant au chocolat</h4>
+                    <p class="bloc-menu__infos__detail">Revisité</p>
+                    <p class="bloc-menu__infos__prix">22€</p>
+                </div>
+                <div class="element-base bloc-menu__infos">
+                    <h4 class="bloc-menu__infos__titre">Millefeuille croustillant</h4>
+                    <p class="bloc-menu__infos__detail">Myrtilles et pâte d’amande</p>
+                    <p class="bloc-menu__infos__prix">23€</p>
+                </div>
+            </div>
+            <button class="btn bloc-menu__btn">Commander</button>
         </div>
-        <footer>
+        <footer class="restaurant-carte__footer">
             <h1 class="footer__titre">ohmyfood</h1>
             <p>Proposer un restaurant</p>
             <p>Devenir partenaire</p>
