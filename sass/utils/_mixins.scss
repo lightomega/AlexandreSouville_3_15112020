@@ -1,0 +1,18 @@
+@mixin shadow-header($colour: $shadow-header-colour) {
+    -webkit-box-shadow: 0px 2px 3px 1px $colour; 
+    box-shadow: 0px 2px 3px 1px $colour;
+}
+@mixin shadow-elements($colour: $shadow-element-base-colour) {
+    -webkit-box-shadow: 0px 5px 10px 0px $colour;
+    box-shadow: 0px 5px 10px 0px $colour;
+}
+@mixin background-btn {
+    background: $couleur-secondaire;
+    background: -moz-linear-gradient(top, $couleur-secondaire 0%, $couleur-primaire 100%);
+    background: -webkit-linear-gradient(top, $couleur-secondaire 0%, $couleur-primaire 100%);
+    background: linear-gradient(to bottom, $couleur-secondaire 0%, $couleur-primaire 100%);
+}
+@mixin flex-columns {
+    display: flex;
+    flex-direction: column;
+}

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:.style.css",
-    "prod": "sass ./sass/main.scss:.style.css",
+    "sass": "sass --watch ./sass/main.scss:./style.css",
+    "prod": "sass ./sass/main.scss:./style.css",
     "prefix":"postcss ./style.css --use autoprefixer -d ./"
   },
   "repository": {
