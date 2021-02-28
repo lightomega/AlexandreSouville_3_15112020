@@ -62,10 +62,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px;
   padding-top: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 50px;
 }
 .explorer-bloc__titre {
   margin-bottom: 10px;
@@ -152,7 +150,7 @@ a {
 .fa-heart {
   position: relative;
   top: 5px;
-  left: 180px;
+  margin-right: 20px;
   transition: background-color 500ms;
 }
 .fa-heart:hover {
@@ -183,6 +181,8 @@ a {
   margin-top: 10px;
   margin-bottom: 0;
   margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 .restaurant-aperçu__ville {
   margin-top: 3px;
@@ -236,6 +236,7 @@ a {
   margin-bottom: 30px;
 }
 .bloc-menu__infos {
+  flex: 0 0 66px;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -250,6 +251,9 @@ a {
 }
 .bloc-menu__infos:hover > .bloc-menu__infos__prix {
   transform: translate(-50px, 0);
+}
+.bloc-menu__infos:hover > .bloc-menu__infos_detail {
+  width: 140px;
 }
 .bloc-menu__infos__prix {
   margin-top: 2px;
@@ -266,6 +270,7 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  transition: transform 300ms ease-out;
 }
 .bloc-menu__infos__titre {
   font-weight: 500;
@@ -285,13 +290,17 @@ a {
 }
 
 .hover-animation {
-  width: 14%;
+  width: 60px;
   background-color: #99E2D0;
-  height: 100%;
+  height: 66px;
   position: relative;
-  margin-left: 2.5px;
-  left: 25%;
+  margin-left: -15px;
+  left: 31%;
+  bottom: 34px;
   transition: transform 330ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*------------------------------------------------------------------
