@@ -246,6 +246,12 @@ a {
   width: 100%;
   overflow: hidden;
 }
+.bloc-menu__infos__check-icone {
+  color: white;
+  transition: transform 350ms;
+  transition-delay: 120ms;
+  transform: scale(-1, -1);
+}
 .bloc-menu__infos:hover > .hover-animation {
   transform: translate(-100px, 0);
 }
@@ -253,12 +259,16 @@ a {
   transform: translate(-50px, 0);
 }
 .bloc-menu__infos:hover > .bloc-menu__infos_detail {
-  width: 140px;
+  padding-right: 50px;
+}
+.bloc-menu__infos:hover .bloc-menu__infos__check-icone {
+  transform: rotate(0deg);
 }
 .bloc-menu__infos__prix {
   margin-top: 2px;
   margin-bottom: 10px;
   transition: transform 300ms ease-out;
+  margin-left: 40px;
 }
 .bloc-menu__infos__detail {
   width: 75%;
@@ -292,11 +302,11 @@ a {
 .hover-animation {
   width: 60px;
   background-color: #99E2D0;
-  height: 66px;
+  height: 67px;
   position: relative;
   margin-left: -15px;
-  left: 31%;
-  bottom: 34px;
+  left: 114%;
+  bottom: 65px;
   transition: transform 330ms ease-in-out;
   display: flex;
   justify-content: center;

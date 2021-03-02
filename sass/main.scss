@@ -217,6 +217,12 @@ a{
         margin-top: 5px;
         width: 100%;
         overflow: hidden;
+        &__check-icone{
+            color: white;
+            transition: transform 350ms;
+            transition-delay: 120ms;
+            transform: scale(-1, -1);
+        }
         &:hover > .hover-animation{
             transform: translate(-100px, 0);
         }
@@ -224,12 +230,16 @@ a{
             transform: translate(-50px, 0);
         }
         &:hover > &_detail{
-            width: 140px;
+            padding-right: 50px;
+        }
+        &:hover &__check-icone{
+            transform: rotate(0deg);
         }
         &__prix{
             margin-top: 2px;
             margin-bottom: 10px;
             transition: transform 300ms ease-out;
+            margin-left: 40px;
         }
         &__detail{
             width: 75%;
@@ -264,11 +274,11 @@ a{
 .hover-animation{
     width: 60px;
     background-color: $couleur-tertiaire;
-    height: 66px;
+    height: 67px;
     position: relative;
     margin-left: -15px;
-    left: 31%;
-    bottom: 34px;
+    left: 114%;
+    bottom: 65px;
     transition: transform 330ms ease-in-out;
     display: flex;
     justify-content: center;
