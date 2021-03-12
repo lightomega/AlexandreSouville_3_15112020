@@ -148,6 +148,9 @@ a{
         box-shadow: 4px 4px 6px #EAEAEA;
         @include flex-columns;
         overflow: hidden;
+        @media screen and (min-width: 769px) {
+            width: 40%;
+        }
         img{
             width: 100%;
         }
@@ -168,6 +171,11 @@ a{
         justify-content: space-between;
         align-items: center;
         padding-bottom: 40px;
+        @media screen and (min-width: 769px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
         &__titre{
             width: 90%;
             text-align: left;
@@ -183,7 +191,22 @@ a{
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 ------------------------------------------------------------------*/
-
+.restaurant-carte > * {
+    animation-duration: 2s;
+    animation-name: apparition;
+    transition: transform 1s;
+    transition-delay: 500ms;
+}
+@keyframes apparition {
+    from {
+        opacity: 0%;
+        transform: translate(0, 15%)
+    }
+    to {
+        opacity: 100%;
+        transform: translate(0, 0);
+    }
+}
 .restaurant-carte{
     background-color: $element-background-colour;
     padding: 20px;
@@ -192,8 +215,16 @@ a{
     border-top-right-radius: 40px;
     position: relative;
     bottom: 50px;
+    @media screen and (min-width: 1440px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     &__titre{
         margin-left: 5px;
+        @media screen and (min-width: 1440px){
+            width: 100%;
+        }
     }
     &__footer{
         margin-top: -50px;
@@ -202,6 +233,12 @@ a{
 .bloc-menu{
     @include flex-columns;
     justify-content: space-around;
+    @media screen and (min-width: 1440px){
+        width: 30%;
+    }
+    @media screen and (min-width: 426px){
+        align-items: center;
+    }
     &__btn{
         align-self: center;
         margin-top: 30px;
@@ -217,6 +254,9 @@ a{
         margin-top: 5px;
         width: 100%;
         overflow: hidden;
+        @media screen and (min-width: 426px){
+            width: 385px;
+        }
         &__check-icone{
             color: white;
             transition: transform 350ms;
@@ -224,13 +264,13 @@ a{
             transform: scale(-1, -1);
         }
         &:hover > .hover-animation{
-            transform: translate(-100px, 0);
+            transform: translate(-100%, 0);
         }
         &:hover > &__prix{
-            transform: translate(-50px, 0);
+            transform: translate(-110%, 0);
         }
-        &:hover > &_detail{
-            padding-right: 50px;
+        &:hover > &__detail{
+            width: calc(75% - 20px);
         }
         &:hover &__check-icone{
             transform: rotate(0deg);
@@ -251,7 +291,7 @@ a{
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            transition: transform 300ms ease-out;
+            transition: width 300ms ease-out;
         }
         &__titre{
             font-weight: 500;
@@ -277,7 +317,7 @@ a{
     height: 67px;
     position: relative;
     margin-left: -15px;
-    left: 114%;
+    left: 104%;
     bottom: 65px;
     transition: transform 330ms ease-in-out;
     display: flex;
