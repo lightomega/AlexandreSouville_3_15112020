@@ -174,6 +174,11 @@ a {
   flex-direction: column;
   overflow: hidden;
 }
+@media screen and (min-width: 769px) {
+  .restaurant-aperçu {
+    width: 40%;
+  }
+}
 .restaurant-aperçu img {
   width: 100%;
 }
@@ -195,6 +200,13 @@ a {
   align-items: center;
   padding-bottom: 40px;
 }
+@media screen and (min-width: 769px) {
+  .restaurant-bloc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 .restaurant-bloc__titre {
   width: 90%;
   text-align: left;
@@ -208,6 +220,23 @@ a {
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 ------------------------------------------------------------------*/
+.restaurant-carte > * {
+  animation-duration: 2s;
+  animation-name: apparition;
+  transition: transform 1s;
+  transition-delay: 500ms;
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0%;
+    transform: translate(0, 15%);
+  }
+  to {
+    opacity: 100%;
+    transform: translate(0, 0);
+  }
+}
 .restaurant-carte {
   background-color: #F7F7F7;
   padding: 20px;
@@ -218,8 +247,20 @@ a {
   position: relative;
   bottom: 50px;
 }
+@media screen and (min-width: 1440px) {
+  .restaurant-carte {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 .restaurant-carte__titre {
   margin-left: 5px;
+}
+@media screen and (min-width: 1440px) {
+  .restaurant-carte__titre {
+    width: 100%;
+  }
 }
 .restaurant-carte__footer {
   margin-top: -50px;
@@ -229,6 +270,16 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@media screen and (min-width: 1440px) {
+  .bloc-menu {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 426px) {
+  .bloc-menu {
+    align-items: center;
+  }
 }
 .bloc-menu__btn {
   align-self: center;
@@ -246,6 +297,11 @@ a {
   width: 100%;
   overflow: hidden;
 }
+@media screen and (min-width: 426px) {
+  .bloc-menu__infos {
+    width: 385px;
+  }
+}
 .bloc-menu__infos__check-icone {
   color: white;
   transition: transform 350ms;
@@ -253,13 +309,13 @@ a {
   transform: scale(-1, -1);
 }
 .bloc-menu__infos:hover > .hover-animation {
-  transform: translate(-100px, 0);
+  transform: translate(-100%, 0);
 }
 .bloc-menu__infos:hover > .bloc-menu__infos__prix {
-  transform: translate(-50px, 0);
+  transform: translate(-110%, 0);
 }
-.bloc-menu__infos:hover > .bloc-menu__infos_detail {
-  padding-right: 50px;
+.bloc-menu__infos:hover > .bloc-menu__infos__detail {
+  width: calc(75% - 20px);
 }
 .bloc-menu__infos:hover .bloc-menu__infos__check-icone {
   transform: rotate(0deg);
@@ -280,7 +336,7 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  transition: transform 300ms ease-out;
+  transition: width 300ms ease-out;
 }
 .bloc-menu__infos__titre {
   font-weight: 500;
@@ -305,7 +361,7 @@ a {
   height: 67px;
   position: relative;
   margin-left: -15px;
-  left: 114%;
+  left: 104%;
   bottom: 65px;
   transition: transform 330ms ease-in-out;
   display: flex;
