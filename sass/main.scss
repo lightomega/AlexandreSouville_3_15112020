@@ -88,6 +88,11 @@ a{
     @include flex-columns;
     justify-content: space-around;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     &__titre{
         width: 90%;
         text-align: left;
@@ -120,7 +125,7 @@ a{
     margin-left: -10px;
 }
 .element-base{
-    width: 85%;
+    width: 402px;
     height: auto;
     @include shadow-elements;
     border-radius: 15px;
@@ -191,14 +196,38 @@ a{
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 ------------------------------------------------------------------*/
-.restaurant-carte > * {
+.restaurant-carte__titre {
+    animation-duration: 1s;
+    animation-name: apparition;
+    transition: transform 1500ms;
+    transition-delay: 500ms;
+}
+.entrees {
     animation-duration: 2s;
     animation-name: apparition;
-    transition: transform 1s;
+    transition: transform 1500ms;
+    transition-delay: 500ms;
+}
+.plats {
+    animation-duration: 2800ms;
+    
+    animation-name: apparition;
+    transition: transform 1500ms;
+    transition-delay: 500ms;
+}
+.desserts {
+    animation-duration: 3300ms;
+    
+    animation-name: apparition;
+    transition: transform 1500ms;
     transition-delay: 500ms;
 }
 @keyframes apparition {
     from {
+        opacity: 0%;
+        transform: translate(0, 15%)
+    }
+    50% {
         opacity: 0%;
         transform: translate(0, 15%)
     }
@@ -219,6 +248,8 @@ a{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        bottom: 306px;
+        height: 800px;
     }
     &__titre{
         margin-left: 5px;
@@ -228,6 +259,9 @@ a{
     }
     &__footer{
         margin-top: -50px;
+        @media screen and (min-width: 1440px) {
+            margin-top: -306px;
+        }
     }
 }
 .bloc-menu{
@@ -243,6 +277,11 @@ a{
         align-self: center;
         margin-top: 30px;
         margin-bottom: 30px;
+        animation-duration: 3800ms;
+    
+        animation-name: apparition;
+        transition: transform 1500ms;
+        transition-delay: 500ms;
     }
     &__infos{
         flex: 0 0 66px;
@@ -299,6 +338,7 @@ a{
             margin-top: 10px;
             margin-bottom: 2px;
             margin-left: 10px;
+            width: 75%;
         }
     }
     &__titre{

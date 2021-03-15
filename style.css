@@ -107,6 +107,13 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .infos-bloc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 .infos-bloc__titre {
   width: 90%;
   text-align: left;
@@ -140,7 +147,7 @@ a {
 }
 
 .element-base {
-  width: 85%;
+  width: 402px;
   height: auto;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.8);
   box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.8);
@@ -220,15 +227,40 @@ a {
 --------------------------------------------------------------------
 --------------------------------------------------------------------
 ------------------------------------------------------------------*/
-.restaurant-carte > * {
+.restaurant-carte__titre {
+  animation-duration: 1s;
+  animation-name: apparition;
+  transition: transform 1500ms;
+  transition-delay: 500ms;
+}
+
+.entrees {
   animation-duration: 2s;
   animation-name: apparition;
-  transition: transform 1s;
+  transition: transform 1500ms;
+  transition-delay: 500ms;
+}
+
+.plats {
+  animation-duration: 2800ms;
+  animation-name: apparition;
+  transition: transform 1500ms;
+  transition-delay: 500ms;
+}
+
+.desserts {
+  animation-duration: 3300ms;
+  animation-name: apparition;
+  transition: transform 1500ms;
   transition-delay: 500ms;
 }
 
 @keyframes apparition {
   from {
+    opacity: 0%;
+    transform: translate(0, 15%);
+  }
+  50% {
     opacity: 0%;
     transform: translate(0, 15%);
   }
@@ -252,6 +284,8 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    bottom: 306px;
+    height: 800px;
   }
 }
 .restaurant-carte__titre {
@@ -264,6 +298,11 @@ a {
 }
 .restaurant-carte__footer {
   margin-top: -50px;
+}
+@media screen and (min-width: 1440px) {
+  .restaurant-carte__footer {
+    margin-top: -306px;
+  }
 }
 
 .bloc-menu {
@@ -285,6 +324,10 @@ a {
   align-self: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  animation-duration: 3800ms;
+  animation-name: apparition;
+  transition: transform 1500ms;
+  transition-delay: 500ms;
 }
 .bloc-menu__infos {
   flex: 0 0 66px;
@@ -344,6 +387,7 @@ a {
   margin-top: 10px;
   margin-bottom: 2px;
   margin-left: 10px;
+  width: 75%;
 }
 .bloc-menu__titre {
   align-self: flex-start;
