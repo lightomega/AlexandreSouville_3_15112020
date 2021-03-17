@@ -12,6 +12,7 @@ header{
     padding-bottom: 5px;
     @include shadow-header;
     position: relative;
+    
 }
 .fa-arrow-left{
     color: grey;
@@ -267,11 +268,9 @@ a{
 .bloc-menu{
     @include flex-columns;
     justify-content: space-around;
+    align-items: center;
     @media screen and (min-width: 1440px){
         width: 30%;
-    }
-    @media screen and (min-width: 426px){
-        align-items: center;
     }
     &__btn{
         align-self: center;
@@ -296,6 +295,9 @@ a{
         @media screen and (min-width: 426px){
             width: 385px;
         }
+        @media screen and (max-width: 424px){
+            width: 280px
+        }
         &__check-icone{
             color: white;
             transition: transform 350ms;
@@ -310,6 +312,9 @@ a{
         }
         &:hover > &__detail{
             width: calc(75% - 20px);
+            @media screen and (max-width: 424px) {
+                width: calc(75% - 32px);
+            }
         }
         &:hover &__check-icone{
             transform: rotate(0deg);
@@ -319,6 +324,9 @@ a{
             margin-bottom: 10px;
             transition: transform 300ms ease-out;
             margin-left: 40px;
+            @media screen and (max-width: 424px) {
+                margin-left: 25px;
+            }
         }
         &__detail{
             width: 75%;
@@ -339,6 +347,9 @@ a{
             margin-bottom: 2px;
             margin-left: 10px;
             width: 75%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
     &__titre{
@@ -363,6 +374,73 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 424px) {
+        left: 106%;
+    }
+}
+.spin-background {
+    height: 0;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    opacity: 0;
+    animation: spin-opacité 4s linear;
+}
+.spin-loader {
+    border: 20px solid #f3f3f3;
+    border-top: 20px solid #FF79DA;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin-opacité {
+    from {
+        opacity: 1;
+        position: fixed;
+        width: 100%;
+    height: 100%;
+    }
+    25% {
+        opacity: 1;
+        position: fixed;
+        width: 100%;
+    height: 100%;
+    }
+    50% {
+        opacity: 1;
+        position: fixed;
+        width: 100%;
+    height: 100%;
+    }
+    60% {
+        opacity: 0.4;
+        position: fixed;
+        width: 100%;
+    height: 100%;
+    }
+    90% {
+        opacity: 0;
+        position: fixed;
+        width: 100%;
+    height: 100%;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+        width: 0;
+        position: static;
+    }
 }
 /*------------------------------------------------------------------
 --------------------------------------------------------------------
