@@ -9,6 +9,7 @@
     opacity: 0;
     animation: spin-opacité 4s linear;
     pointer-events: none;
+    z-index: 1;
 }
 
 .spin-loader {

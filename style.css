@@ -65,9 +65,6 @@ a {
 
 .fa-arrow-left {
   color: grey;
-  position: relative;
-  right: 70px;
-  top: 2px;
 }
 
 .fa-map-marker-alt {
@@ -85,7 +82,9 @@ a {
 }
 .fa-heart:hover {
   font-weight: bold;
-  color: #FF79DA;
+  color: #9356DC;
+  color: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  color: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   color: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
 }
 
@@ -100,6 +99,7 @@ a {
   opacity: 0;
   animation: spin-opacité 4s linear;
   pointer-events: none;
+  z-index: 1;
 }
 
 .spin-loader {
@@ -171,6 +171,12 @@ footer p {
   margin-top: 10px;
 }
 
+header a {
+  position: relative;
+  right: 70px;
+  top: 2px;
+}
+
 .explorer {
   display: flex;
   flex-direction: column;
@@ -200,6 +206,7 @@ footer p {
   font-size: 26px;
 }
 .explorer-bloc__txt {
+  width: 80%;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -278,6 +285,7 @@ footer p {
   width: 100%;
 }
 .restaurant-aperçu__titre {
+  font-size: 18px;
   margin-top: 10px;
   margin-bottom: 0;
   margin-left: 10px;
@@ -287,6 +295,27 @@ footer p {
 .restaurant-aperçu__ville {
   margin-top: 3px;
   margin-left: 10px;
+}
+.restaurant-aperçu__nouveau {
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85px;
+  height: 30px;
+  background-color: #99E2D0;
+  color: #278870;
+  position: relative;
+  left: 32%;
+  top: 50px;
+  z-index: 0;
+  border-radius: 2px;
+}
+@media screen and (min-width: 770px) {
+  .restaurant-aperçu__nouveau {
+    display: none;
+  }
 }
 .restaurant-bloc {
   display: flex;
@@ -434,6 +463,11 @@ footer p {
   overflow: hidden;
   white-space: nowrap;
   transition: width 300ms ease-out;
+}
+@media screen and (max-width: 424px) {
+  .bloc-menu__infos__detail {
+    width: 75%;
+  }
 }
 .bloc-menu__infos__titre {
   font-weight: 500;

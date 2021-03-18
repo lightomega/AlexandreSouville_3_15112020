@@ -1,8 +1,5 @@
 .fa-arrow-left{
     color: grey;
-    position: relative;
-    right: 70px;
-    top: 2px;
 }
 
 .fa-map-marker-alt{
@@ -19,7 +16,9 @@
     transition: all 500ms;
     &:hover{
         font-weight: bold;
-        color: $couleur-secondaire;
+        color: $couleur-primaire;
+        color: -moz-linear-gradient(to bottom, $couleur-secondaire 0%, $couleur-primaire 100%);
+        color: -webkit-linear-gradient(to bottom, $couleur-secondaire 0%, $couleur-primaire 100%);
         color: linear-gradient(to bottom, $couleur-secondaire 0%, $couleur-primaire 100%);
     }
 }

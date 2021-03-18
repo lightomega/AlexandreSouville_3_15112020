@@ -23,6 +23,7 @@
             font-size: 26px;
         }
     &__txt{
+        width: 80%;
         text-align: center;
         margin-top: 0px;
         margin-bottom: 30px;
@@ -95,6 +96,7 @@
             width: 100%;
         }
         &__titre{
+            font-size: 18px;
             margin-top: 10px;
             margin-bottom: 0;
             margin-left: 10px;
@@ -104,6 +106,25 @@
         &__ville{
             margin-top: 3px;
             margin-left: 10px;
+        }
+        &__nouveau {
+                font-weight: 500;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 85px;
+                height: 30px;
+                background-color: $couleur-tertiaire;
+                color: darken($couleur-tertiaire, 40);
+                position: relative;
+                left: 32%;
+                top: 50px;
+                z-index: 0;
+                border-radius: 2px;
+                @media screen and (min-width: 770px) {
+                    display: none;
+                }
         }
     }
     &-bloc{
