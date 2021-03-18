@@ -7,7 +7,7 @@
     align-items: center;
     background: white;
     opacity: 0;
-    animation: spin-opacité 4s linear;
+    animation: spin-opacite 4s linear;
     pointer-events: none;
     z-index: 1;
 }
@@ -30,7 +30,7 @@
     }
 }
 
-@keyframes spin-opacité {
+@keyframes spin-opacite {
     from {
         opacity: 1;
     }
