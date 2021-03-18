@@ -93,6 +93,14 @@ a {
   color: white;
   border: none;
   font-weight: 500;
+  transition: background-color 500ms;
+}
+.btn:hover {
+  background: #FF79DA;
+  background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background-color: #fff9fd;
 }
 
 .infos-bloc__icone {
@@ -153,16 +161,25 @@ a {
   box-shadow: 0px 5px 10px 0px rgba(224, 224, 224, 0.8);
   border-radius: 15px;
 }
+@media screen and (max-width: 462px) {
+  .element-base {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .element-base {
+    width: 280px;
+  }
+}
 
 .fa-heart {
-  position: relative;
-  top: 5px;
   margin-right: 20px;
-  transition: background-color 500ms;
+  transition: all 500ms;
 }
 .fa-heart:hover {
-  background-color: #FF79DA;
-  background-color: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  font-weight: bold;
+  color: #FF79DA;
+  color: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
 }
 
 .restaurant {
@@ -336,7 +353,7 @@ a {
   width: 100%;
   overflow: hidden;
 }
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 425px) {
   .bloc-menu__infos {
     width: 385px;
   }
@@ -433,14 +450,16 @@ a {
 }
 
 .spin-background {
-  height: 0;
-  width: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: white;
   opacity: 0;
   animation: spin-opacité 4s linear;
+  pointer-events: none;
 }
 
 .spin-loader {
@@ -463,39 +482,21 @@ a {
 @keyframes spin-opacité {
   from {
     opacity: 1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
   }
   25% {
     opacity: 1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
   }
   50% {
     opacity: 1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
   }
   60% {
-    opacity: 0.4;
-    position: fixed;
-    width: 100%;
-    height: 100%;
+    opacity: 0;
   }
   90% {
     opacity: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
   }
-  100% {
+  to {
     opacity: 0;
-    height: 0;
-    width: 0;
-    position: static;
   }
 }
 /*------------------------------------------------------------------
