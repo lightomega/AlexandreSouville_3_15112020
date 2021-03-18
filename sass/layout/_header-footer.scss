@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    @include shadow-header;
+    position: relative;
+    
+}
+
+.footer__titre{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+footer{
+    height: 210px;
+    @include flex-columns;
+    background-color: #353535;
+    color: white;
+    padding-left: 25px;
+    p{
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+.fa-arrow-left{
+    color: grey;
+    position: relative;
+    right: 70px;
+    top: 2px;
+}
+
+.fa-map-marker-alt{
+    padding-right: 20px;
+}
+
+.infos-bloc__icone{
+    margin-right: 30px;
+    color: $info-bloc_icone-colour;
+}
+
+.fa-heart{
+    margin-right: 20px;
+    transition: all 500ms;
+    &:hover{
+        font-weight: bold;
+        color: $couleur-secondaire;
+        color: linear-gradient(to bottom, $couleur-secondaire 0%, $couleur-primaire 100%);
+    }
+}

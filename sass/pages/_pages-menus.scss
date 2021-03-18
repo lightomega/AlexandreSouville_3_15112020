@@ -1,0 +1,190 @@
+.restaurant-carte{
+    background-color: $element-background-colour;
+    padding: 20px;
+    @include flex-columns;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    bottom: 50px;
+    @media screen and (min-width: 1440px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        bottom: 306px;
+        height: 800px;
+    }
+    &__titre{
+        margin-left: 5px;
+        animation-duration: 1s;
+        animation-name: apparition;
+        transition: transform 1500ms;
+        transition-delay: 500ms;
+        @media screen and (min-width: 1440px){
+            width: 100%;
+        }
+    }
+    &__footer{
+        margin-top: -50px;
+        @media screen and (min-width: 1440px) {
+            margin-top: -306px;
+        }
+    }
+}
+
+.bloc-menu{
+    @include flex-columns;
+    justify-content: space-around;
+    align-items: center;
+    @media screen and (min-width: 1440px){
+        width: 30%;
+    }
+    &__btn{
+        align-self: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        animation-duration: 3800ms;
+    
+        animation-name: apparition;
+        transition: transform 1500ms;
+        transition-delay: 500ms;
+    }
+    &__infos{
+        flex: 0 0 66px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        width: 100%;
+        overflow: hidden;
+        @media screen and (min-width: 425px){
+            width: 385px;
+        }
+        @media screen and (max-width: 424px){
+            width: 280px
+        }
+        &__check-icone{
+            color: white;
+            transition: transform 350ms;
+            transition-delay: 120ms;
+            transform: scale(-1, -1);
+        }
+        &:hover > .hover-animation{
+            transform: translate(-100%, 0);
+        }
+        &:hover > &__prix{
+            transform: translate(-110%, 0);
+        }
+        &:hover > &__detail{
+            width: calc(75% - 20px);
+            @media screen and (max-width: 424px) {
+                width: calc(75% - 32px);
+            }
+        }
+        &:hover &__check-icone{
+            transform: rotate(0deg);
+        }
+        &__prix{
+            margin-top: 2px;
+            margin-bottom: 10px;
+            transition: transform 300ms ease-out;
+            margin-left: 40px;
+            @media screen and (max-width: 424px) {
+                margin-left: 25px;
+            }
+        }
+        &__detail{
+            width: 75%;
+            font-weight: 300;
+            font-size: 16px;
+            margin-top: 2px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            transition: width 300ms ease-out;
+        }
+        &__titre{
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            margin-left: 10px;
+            width: 75%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+    &__titre{
+        align-self: flex-start;
+        margin-left: 5px;
+        font-weight: 300;
+        &--underline{
+            border-bottom: solid $couleur-tertiaire;
+            padding-bottom: 5px;
+        }
+    }
+}
+
+.hover-animation{
+    width: 60px;
+    background-color: $couleur-tertiaire;
+    height: 67px;
+    position: relative;
+    margin-left: -15px;
+    left: 104%;
+    bottom: 65px;
+    transition: transform 330ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 424px) {
+        left: 106%;
+    }
+}
+
+.entrees {
+    animation-duration: 2s;
+    animation-name: apparition;
+    transition: transform 1500ms;
+    transition-delay: 500ms;
+}
+
+.plats {
+    animation-duration: 2800ms;
+    
+    animation-name: apparition;
+    transition: transform 1500ms;
+    transition-delay: 500ms;
+}
+
+.desserts {
+    animation-duration: 3300ms;
+    
+    animation-name: apparition;
+    transition: transform 1500ms;
+    transition-delay: 500ms;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0%;
+        transform: translate(0, 15%)
+    }
+    50% {
+        opacity: 0%;
+        transform: translate(0, 15%)
+    }
+    to {
+        opacity: 100%;
+        transform: translate(0, 0);
+    }
+}
+
+.background-image{
+    position: relative;
+    width: 100%;
+}

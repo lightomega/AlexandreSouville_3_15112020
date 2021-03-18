@@ -1,0 +1,12 @@
+.element-base{
+    width: 402px;
+    height: auto;
+    @include shadow-elements;
+    border-radius: 15px;
+    @media screen and (max-width: 462px) {
+        width: 350px;
+    }
+    @media screen and (max-width: 400px) {
+        width: 280px;
+    }
+}
