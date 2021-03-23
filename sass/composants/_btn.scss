@@ -8,8 +8,4 @@
     border: none;
     font-weight: 500;
     transition: background-color 500ms;
-    &:hover{
-       @include background-btn; 
-       background-color: lighten($couleur-secondaire, 25%);
-    }
 }

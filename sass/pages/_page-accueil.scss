@@ -81,6 +81,7 @@
     padding-top: 25px;
     margin-top: 50px;
     &-apercu{
+        position: relative;
         width: 90%;
         height: auto;
         background-color: white;
@@ -117,22 +118,19 @@
                 height: 30px;
                 background-color: $couleur-tertiaire;
                 color: darken($couleur-tertiaire, 40);
-                position: relative;
+                position: absolute;
                 left: 32%;
                 top: 50px;
                 z-index: 0;
                 border-radius: 2px;
-                @media screen and (min-width: 770px) {
-                    display: none;
-                }
+                }       
         }
-    }
-    &-bloc{
-        @include flex-columns;
-        justify-content: space-between;
-        align-items: center;
-        padding-bottom: 40px;
-        @media screen and (min-width: 769px) {
+        &-bloc{
+            @include flex-columns;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 40px;
+            @media screen and (min-width: 769px) {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;

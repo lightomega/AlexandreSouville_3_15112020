@@ -43,9 +43,8 @@ a {
   width: 190px;
   height: 45px;
   border-radius: 25px;
-  background: #FF79DA;
-  background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
+  background: -moz-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+  background: -webkit-linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
   -webkit-box-shadow: 0px 5px 10px 0px #BFBFBF;
   box-shadow: 0px 5px 10px 0px #BFBFBF;
@@ -55,11 +54,9 @@ a {
   transition: background-color 500ms;
 }
 .btn:hover {
-  background: #FF79DA;
-  background: -moz-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: -webkit-linear-gradient(top, #FF79DA 0%, #9356DC 100%);
-  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-  background-color: #fff9fd;
+  background: -moz-linear-gradient(to bottom, #ffdff6 0%, #c9abee 100%);
+  background: -webkit-linear-gradient(to bottom, #ffdff6 0%, #c9abee 100%);
+  background: linear-gradient(to bottom, #ffdff6 0%, #c9abee 100%);
 }
 
 .fa-arrow-left {
@@ -81,7 +78,9 @@ a {
 }
 .fa-heart:hover {
   font-weight: bold;
-  color: #9356DC;
+  background: linear-gradient(to bottom, #FF79DA 10%, #9356DC 90%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .spin-background {
@@ -262,6 +261,7 @@ header a {
   margin-top: 50px;
 }
 .restaurant-apercu {
+  position: relative;
   width: 90%;
   height: auto;
   background-color: white;
@@ -302,16 +302,11 @@ header a {
   height: 30px;
   background-color: #99E2D0;
   color: #278870;
-  position: relative;
+  position: absolute;
   left: 32%;
   top: 50px;
   z-index: 0;
   border-radius: 2px;
-}
-@media screen and (min-width: 770px) {
-  .restaurant-apercu__nouveau {
-    display: none;
-  }
 }
 .restaurant-bloc {
   display: flex;

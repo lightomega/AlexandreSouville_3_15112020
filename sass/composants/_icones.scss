@@ -1,21 +1,23 @@
-.fa-arrow-left{
+.fa-arrow-left {
     color: grey;
 }
 
-.fa-map-marker-alt{
+.fa-map-marker-alt {
     padding-right: 20px;
 }
 
-.infos-bloc__icone{
+.infos-bloc__icone {
     margin-right: 30px;
     color: $info-bloc_icone-colour;
 }
 
-.fa-heart{
+.fa-heart {
     margin-right: 20px;
     transition: all 500ms;
-    &:hover{
+    &:hover {
         font-weight: bold;
-        color: $couleur-primaire;
+        background: linear-gradient(to bottom, $couleur-secondaire 10%, $couleur-primaire 90%);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 }

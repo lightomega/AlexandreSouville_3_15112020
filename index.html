@@ -1,112 +1,117 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Titre</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;900&family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="fontawesome/css/all.css">
-        <meta name="viewport" content="width=device-width, initial-scale=0.9">
-    </head>
-    <body>
-        <div class="spin-background">
-            <div class="spin-loader"></div>
+
+<head>
+    <meta charset="utf-8">
+    <title>Oh My Food</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+</head>
+
+<body>
+    <div class="spin-background">
+        <div class="spin-loader"></div>
+    </div>
+    <header>
+        <h1>ohmyfood</h1>
+    </header>
+
+    <section class="explorer">
+
+        <p class="explorer__lieu"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
+        <div class="explorer-bloc">
+            <h3 class="explorer-bloc__titre">Réservez le menu qui vous convient</h3>
+            <p class="explorer-bloc__txt">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            <button class="btn explorer-bloc__btn">Explorer nos restaurants</button>
         </div>
-        <header>
-            <h1>ohmyfood</h1>
-        </header>
-        
-        <section class="explorer">
-            
-            <p class="explorer__lieu"><i class="fas fa-map-marker-alt"></i>Paris, Belleville</p>
-            <div class="explorer-bloc">
-                <h3 class="explorer-bloc__titre">Réservez le menu qui vous convient</h3>
-                <p class="explorer-bloc__txt">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button class="btn explorer-bloc__btn">Explorer nos restaurants</button>
-            </div>
-        </section>
-        
-        <section class="infos">
-            <div class="infos-bloc">
-                <h3 class="infos-bloc__titre">Fonctionnement</h3>
-                <div class="element-base infos-bloc__choisir">
-                    <div class="numero-info">1</div>
-                    <i class="fas fa-mobile-alt infos-bloc__icone"></i>
-                    <p>Choisissez un restaurant</p>
-                </div>
-                <div class="element-base infos-bloc__composer">
-                    <div class="numero-info">2</div>
-                    <i class="fas fa-list-ul infos-bloc__icone"></i>
-                    <p>Composez votre menu</p>
-                </div>
-                <div class="element-base infos-bloc__deguster">
-                    <div class="numero-info">3</div>
-                    <i class="fas fa-store infos-bloc__icone"></i>
-                    <p>Dégustez au restaurant</p>
-                </div>
-            </div>
-            
-        </section>
+    </section>
 
-        <section class="restaurant">
-            <div class="restaurant-bloc">
-                <h3 class="restaurant-bloc__titre">Restaurants</h3>
-                <div class="restaurant-apercu__nouveau">Nouveau</div>
-                <div class="restaurant-apercu">
-                    <a href="la_palette_du_gout.html">
-                        <picture>
-                            <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-1.jpg">
-                            <source media="(max-width: 768px)" srcset="images/restaurants/restaurant-1-tablette-laptop.jpg">
-                            <img src="images/restaurants/restaurant-1.jpg" alt="La-palette-du-gout">
-                        </picture>
-                        <h4 class="restaurant-apercu__titre">La palette du goût<i class="far fa-heart fa-lg"></i></h4>
-                        <p class="restaurant-apercu__ville">Ménilmontant</p>
-                    </a>
-                </div>
-                <div class="restaurant-apercu__nouveau">Nouveau</div>
-                <div class="restaurant-apercu">
-                    <a href="la_note_enchantée.html">
-                        <picture>
-                            <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-2.jpg">
-                            <source media="(max-width: 768px)" srcset="images/restaurants/restaurant-2-tablette-laptop.jpg">
-                            <img src="images/restaurants/restaurant-2.jpg" alt="La-palette-du-gout">
-                        </picture>
-                        <h4 class="restaurant-apercu__titre">La note enchantée<i class="far fa-heart fa-lg"></i></h4>
-                        <p class="restaurant-apercu__ville">Charonne</p>
-                    </a>
-                </div>
-                <div class="restaurant-apercu">
-                    <a href="a_la_française.html">
-                        <picture>
-                            <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-3.jpg">
-                            <source media="(max-width: 768px)" srcset="images/restaurants/restaurant-3-tablette-laptop.jpg">
-                            <img src="images/restaurants/restaurant-3.jpg" alt="La-palette-du-gout">
-                        </picture>
-                        <h4 class="restaurant-apercu__titre">à la française<i class="far fa-heart fa-lg"></i></h4>
-                        <p class="restaurant-apercu__ville">Cité rouge</p>
-                    </a>
-                </div>
-                <div class="restaurant-apercu">
-                    <a href="le_delice_des_sens.html">
-                        <picture>
-                            <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-4.jpg">
-                            <source media="(max-width: 768px)" srcset="images/restaurants/restaurant-4-tablette-laptop.jpg">
-                            <img src="images/restaurants/restaurant-4.jpg" alt="La-palette-du-gout">
-                        </picture>
-                        <h4 class="restaurant-apercu__titre">Le délice des sens<i class="far fa-heart fa-lg"></i></h4>
-                        <p class="restaurant-apercu__ville">Folie-Méricourt</p>
-                    </a>
-                </div>
+    <section class="infos">
+        <div class="infos-bloc">
+            <h3 class="infos-bloc__titre">Fonctionnement</h3>
+            <div class="element-base infos-bloc__choisir">
+                <div class="numero-info">1</div>
+                <i class="fas fa-mobile-alt infos-bloc__icone"></i>
+                <p>Choisissez un restaurant</p>
+            </div>
+            <div class="element-base infos-bloc__composer">
+                <div class="numero-info">2</div>
+                <i class="fas fa-list-ul infos-bloc__icone"></i>
+                <p>Composez votre menu</p>
+            </div>
+            <div class="element-base infos-bloc__deguster">
+                <div class="numero-info">3</div>
+                <i class="fas fa-store infos-bloc__icone"></i>
+                <p>Dégustez au restaurant</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="restaurant">
+        <div class="restaurant-bloc">
+            <h3 class="restaurant-bloc__titre">Restaurants</h3>
+
+            <div class="restaurant-apercu">
+                <a href="la_palette_du_gout.html">
+                    <div class="restaurant-apercu__nouveau">Nouveau</div>
+                    <picture>
+                        <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-1.jpg">
+                        <source media="(max-width: 768px)" srcset="images/restaurants/restaurant-1-tablette-laptop.jpg">
+                        <img src="images/restaurants/restaurant-1.jpg" alt="La-palette-du-gout">
+                    </picture>
+                    <h4 class="restaurant-apercu__titre">La palette du goût<i class="far fa-heart"></i></h4>
+                    <p class="restaurant-apercu__ville">Ménilmontant</p>
+                </a>
             </div>
 
-        </section>
-        <footer>
-            <h1 class="footer__titre">ohmyfood</h1>
-            <p>Proposer un restaurant</p>
-            <p>Devenir partenaire</p>
-            <p>Mentions légales</p>
-            <p>Contact</p>
-        </footer>
-    </body>
+            <div class="restaurant-apercu">
+                <a href="la_note_enchantée.html">
+                    <div class="restaurant-apercu__nouveau">Nouveau</div>
+                    <picture>
+                        <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-2.jpg">
+                        <source media="(max-width: 768px)" srcset="images/restaurants/restaurant-2-tablette-laptop.jpg">
+                        <img src="images/restaurants/restaurant-2.jpg" alt="La-palette-du-gout">
+                    </picture>
+                    <h4 class="restaurant-apercu__titre">La note enchantée<i class="far fa-heart"></i></h4>
+                    <p class="restaurant-apercu__ville">Charonne</p>
+                </a>
+            </div>
+            <div class="restaurant-apercu">
+                <a href="a_la_française.html">
+                    <picture>
+                        <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-3.jpg">
+                        <source media="(max-width: 768px)" srcset="images/restaurants/restaurant-3-tablette-laptop.jpg">
+                        <img src="images/restaurants/restaurant-3.jpg" alt="La-palette-du-gout">
+                    </picture>
+                    <h4 class="restaurant-apercu__titre">à la française<i class="far fa-heart"></i></h4>
+                    <p class="restaurant-apercu__ville">Cité rouge</p>
+                </a>
+            </div>
+            <div class="restaurant-apercu">
+                <a href="le_delice_des_sens.html">
+                    <picture>
+                        <source media="(max-width: 530px)" srcset="images/restaurants/restaurant-4.jpg">
+                        <source media="(max-width: 768px)" srcset="images/restaurants/restaurant-4-tablette-laptop.jpg">
+                        <img src="images/restaurants/restaurant-4.jpg" alt="La-palette-du-gout">
+                    </picture>
+                    <h4 class="restaurant-apercu__titre">Le délice des sens<i class="far fa-heart"></i></h4>
+                    <p class="restaurant-apercu__ville">Folie-Méricourt</p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <h1 class="footer__titre">ohmyfood</h1>
+        <p>Proposer un restaurant</p>
+        <p>Devenir partenaire</p>
+        <p>Mentions légales</p>
+        <p>Contact</p>
+    </footer>
+</body>
+
 </html>
