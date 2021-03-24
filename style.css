@@ -21,6 +21,12 @@ a {
   color: black;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+
 .element-base {
   width: 402px;
   height: auto;
@@ -51,12 +57,13 @@ a {
   color: white;
   border: none;
   font-weight: 500;
-  transition: background-color 500ms;
+  transition: all 500ms;
 }
 .btn:hover {
-  background: -moz-linear-gradient(to bottom, #ffdff6 0%, #c9abee 100%);
-  background: -webkit-linear-gradient(to bottom, #ffdff6 0%, #c9abee 100%);
-  background: linear-gradient(to bottom, #ffdff6 0%, #c9abee 100%);
+  background: -moz-linear-gradient(to bottom, #ff88de 0%, #9b63df 100%);
+  background: -webkit-linear-gradient(to bottom, #ff88de 0%, #9b63df 100%);
+  background: linear-gradient(to bottom, #ff88de 0%, #9b63df 100%);
+  box-shadow: 0px 5px 10px 0px #8c8c8c;
 }
 
 .fa-arrow-left {
@@ -75,12 +82,21 @@ a {
 .fa-heart {
   margin-right: 20px;
   transition: all 500ms;
+  font-size: 24px;
 }
 .fa-heart:hover {
   font-weight: bold;
   background: linear-gradient(to bottom, #FF79DA 10%, #9356DC 90%);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.footer__icone-proposer {
+  margin-right: 15px;
+}
+
+.footer__icone-partenaire {
+  margin-right: 7px;
 }
 
 .spin-background {
@@ -167,9 +183,9 @@ footer p {
 }
 
 header a {
-  position: relative;
-  right: 70px;
-  top: 2px;
+  position: absolute;
+  left: 5%;
+  top: 44%;
 }
 
 .explorer {
@@ -303,8 +319,8 @@ header a {
   background-color: #99E2D0;
   color: #278870;
   position: absolute;
-  left: 32%;
-  top: 50px;
+  right: 4%;
+  top: 5%;
   z-index: 0;
   border-radius: 2px;
 }
@@ -347,12 +363,21 @@ header a {
     height: 800px;
   }
 }
+.restaurant-carte i {
+  width: 7%;
+}
 .restaurant-carte__titre {
   margin-left: 5px;
   animation-duration: 1s;
   animation-name: apparition;
   transition: transform 1500ms;
   transition-delay: 500ms;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 1440px) {
   .restaurant-carte__titre {
@@ -385,8 +410,6 @@ header a {
   margin-bottom: 30px;
   animation-duration: 3800ms;
   animation-name: apparition;
-  transition: transform 1500ms;
-  transition-delay: 500ms;
 }
 .bloc-menu__infos {
   flex: 0 0 66px;
@@ -536,8 +559,22 @@ header a {
   }
 }
 .background-image {
+  overflow: hidden;
+}
+@media screen and (min-width: 1920px) {
+  .background-image {
+    height: 1000px;
+  }
+}
+
+.background-image img {
   position: relative;
   width: 100%;
+}
+@media screen and (min-width: 1920px) {
+  .background-image img {
+    bottom: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

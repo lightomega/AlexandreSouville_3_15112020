@@ -13,9 +13,10 @@
     background: -webkit-linear-gradient(to bottom, $couleur-secondaire 0%, $couleur-primaire 100%);
     background: linear-gradient(to bottom, $couleur-secondaire 0%, $couleur-primaire 100%);
     &:hover {
-        background: -moz-linear-gradient(to bottom, lighten($couleur-secondaire, 20%) 0%, lighten($couleur-primaire, 20%) 100%);
-        background: -webkit-linear-gradient(to bottom, lighten($couleur-secondaire, 20%) 0%, lighten($couleur-primaire, 20%) 100%);
-        background: linear-gradient(to bottom, lighten($couleur-secondaire, 20%) 0%, lighten($couleur-primaire, 20%) 100%);
+        background: -moz-linear-gradient(to bottom, lighten($couleur-secondaire, 3%) 0%, lighten($couleur-primaire, 3%) 100%);
+        background: -webkit-linear-gradient(to bottom, lighten($couleur-secondaire, 3%) 0%, lighten($couleur-primaire, 3%) 100%);
+        background: linear-gradient(to bottom, lighten($couleur-secondaire, 3%) 0%, lighten($couleur-primaire, 3%) 100%);
+        box-shadow: 0px 5px 10px 0px darken($shadow-btn-colour, 20%);
     }
 }
 

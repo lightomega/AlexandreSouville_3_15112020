@@ -13,12 +13,21 @@
         bottom: 306px;
         height: 800px;
     }
+    & i {
+        width: 7%;
+    }
     &__titre{
         margin-left: 5px;
         animation-duration: 1s;
         animation-name: apparition;
         transition: transform 1500ms;
         transition-delay: 500ms;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
         @media screen and (min-width: 1440px){
             width: 100%;
         }
@@ -45,8 +54,6 @@
         animation-duration: 3800ms;
     
         animation-name: apparition;
-        transition: transform 1500ms;
-        transition-delay: 500ms;
     }
     &__infos{
         flex: 0 0 66px;
@@ -186,8 +193,16 @@
         transform: translate(0, 0);
     }
 }
-
 .background-image{
+    overflow: hidden;
+    @media screen and (min-width: 1920px) {
+        height: 1000px;
+    }
+}
+.background-image img{
     position: relative;
     width: 100%;
+    @media screen and (min-width: 1920px) {
+        bottom: 25%;
+    }
 }

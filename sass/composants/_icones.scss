@@ -14,10 +14,17 @@
 .fa-heart {
     margin-right: 20px;
     transition: all 500ms;
+    font-size: 24px;
     &:hover {
         font-weight: bold;
         background: linear-gradient(to bottom, $couleur-secondaire 10%, $couleur-primaire 90%);
         -webkit-background-clip: text;
         color: transparent;
     }
+}
+.footer__icone-proposer {
+    margin-right: 15px;
+}
+.footer__icone-partenaire {
+    margin-right: 7px;
 }
