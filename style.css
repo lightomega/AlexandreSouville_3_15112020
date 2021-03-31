@@ -255,6 +255,9 @@ header a {
   align-items: center;
   flex-wrap: wrap;
 }
+.infos-bloc__choisir:hover, .infos-bloc__composer:hover, .infos-bloc__deguster:hover {
+  background-color: rgba(146, 86, 220, 0.1);
+}
 
 .numero-info {
   width: 20px;
@@ -412,7 +415,6 @@ header a {
   animation-name: apparition;
 }
 .bloc-menu__infos {
-  flex: 0 0 66px;
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -420,6 +422,7 @@ header a {
   margin-bottom: 15px;
   margin-top: 5px;
   width: 100%;
+  position: relative;
   overflow: hidden;
 }
 @media screen and (min-width: 425px) {
@@ -452,8 +455,18 @@ header a {
     width: calc(75% - 32px);
   }
 }
+@media screen and (max-width: 424px) {
+  .bloc-menu__infos:hover > .bloc-menu__infos__detail {
+    white-space: nowrap;
+  }
+}
 .bloc-menu__infos:hover .bloc-menu__infos__check-icone {
   transform: rotate(0deg);
+}
+@media screen and (max-width: 424px) {
+  .bloc-menu__infos:hover > .bloc-menu__infos__titre {
+    white-space: nowrap;
+  }
 }
 .bloc-menu__infos__prix {
   margin-top: 2px;
@@ -475,8 +488,12 @@ header a {
   margin-left: 10px;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
   transition: width 300ms ease-out;
+}
+@media screen and (min-width: 425px) {
+  .bloc-menu__infos__detail {
+    white-space: nowrap;
+  }
 }
 @media screen and (max-width: 424px) {
   .bloc-menu__infos__detail {
@@ -492,7 +509,11 @@ header a {
   width: 75%;
   text-overflow: ellipsis;
   overflow: hidden;
-  white-space: nowrap;
+}
+@media screen and (min-width: 425px) {
+  .bloc-menu__infos__titre {
+    white-space: nowrap;
+  }
 }
 .bloc-menu__titre {
   align-self: flex-start;
@@ -507,11 +528,10 @@ header a {
 .hover-animation {
   width: 60px;
   background-color: #99E2D0;
-  height: 67px;
-  position: relative;
+  height: 100%;
+  position: absolute;
   margin-left: -15px;
   left: 104%;
-  bottom: 65px;
   transition: transform 330ms ease-in-out;
   display: flex;
   justify-content: center;

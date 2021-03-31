@@ -58,7 +58,11 @@
         justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
+        &:hover {
+            background-color: rgba(146, 86, 220, 0.1);
+        }
     }
+    
 }
 
 .numero-info{

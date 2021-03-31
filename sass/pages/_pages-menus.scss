@@ -56,7 +56,6 @@
         animation-name: apparition;
     }
     &__infos{
-        flex: 0 0 66px;
         background-color: white;
         display: flex;
         flex-direction: row;
@@ -64,6 +63,7 @@
         margin-bottom: 15px;
         margin-top: 5px;
         width: 100%;
+        position: relative;
         overflow: hidden;
         @media screen and (min-width: 425px){
             width: 385px;
@@ -84,13 +84,21 @@
             transform: translate(-110%, 0);
         }
         &:hover > &__detail{
-            width: calc(75% - 20px);
+            width: calc(75% - 20px);            
             @media screen and (max-width: 424px) {
                 width: calc(75% - 32px);
+            }
+            @media screen and (max-width: 424px) {
+                white-space: nowrap;
             }
         }
         &:hover &__check-icone{
             transform: rotate(0deg);
+        }
+        &:hover > &__titre {
+            @media screen and (max-width: 424px) {
+                white-space: nowrap;
+            }
         }
         &__prix{
             margin-top: 2px;
@@ -110,8 +118,10 @@
             margin-left: 10px;
             text-overflow: ellipsis;
             overflow: hidden;
-            white-space: nowrap;
             transition: width 300ms ease-out;
+            @media screen and (min-width: 425px) {
+                white-space: nowrap;
+            }
             @media screen and (max-width: 424px) {
                 width: 75%;
             }
@@ -125,7 +135,9 @@
             width: 75%;
             text-overflow: ellipsis;
             overflow: hidden;
-            white-space: nowrap;
+            @media screen and (min-width: 425px) {
+                white-space: nowrap;
+            }
         }
     }
     &__titre{
@@ -142,11 +154,10 @@
 .hover-animation{
     width: 60px;
     background-color: $couleur-tertiaire;
-    height: 67px;
-    position: relative;
+    height: 100%;
+    position: absolute;
     margin-left: -15px;
     left: 104%;
-    bottom: 65px;
     transition: transform 330ms ease-in-out;
     display: flex;
     justify-content: center;
@@ -199,7 +210,7 @@
         height: 1000px;
     }
 }
-.background-image img{
+.background-image img {
     position: relative;
     width: 100%;
     @media screen and (min-width: 1920px) {
