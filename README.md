@@ -1,4 +1,4 @@
-# AlexandreSouville_Projet_Oh_My_Food
+# Alexandre Souville Projet Oh My Food
 
 Intégration de maquette web avec utilisation de sass et animations CSS modernes grâce à des keyframes, variables, mixins etc..
 
